@@ -1,0 +1,1666 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>PPC Optimizations Preview - Santa Ana Magic Smile</title>
+    <link href='https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap' rel='stylesheet'>
+    <link rel='stylesheet' href='https://www.santaanamagicsmile.com/wp-content/themes/generatepress/assets/css/main.min.css?ver=3.6.0' media='all' />
+    <link rel='stylesheet' href='https://www.santaanamagicsmile.com/wp-content/themes/generatepress_child/style.css?ver=1762410720' media='all' />
+    <link rel='stylesheet' href='https://www.santaanamagicsmile.com/wp-content/uploads/elementor/css/custom-frontend.min.css?ver=1762799315' media='all' />
+    <link rel='stylesheet' href='https://www.santaanamagicsmile.com/wp-content/uploads/elementor/css/post-11.css?ver=1762800436' media='all' />
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Poppins, sans-serif;
+        }
+        
+        /* PPC Optimizations - Applied Styles */
+        body.home .header-mobile a[href*="facebook"],
+        body.home .header-mobile a[href*="instagram"] {
+            display: none !important;
+        }
+        
+        body.home .menu-btn > a[href*="dm.pcols.com"] {
+            display: none !important;
+        }
+        
+        @media (max-width: 1023px) {
+            body.home .menu-toggle {
+                display: none !important;
+                visibility: hidden !important;
+            }
+        }
+        
+        @media (max-width: 768px) {
+            body.home .header-mobile a[href^="tel:"] {
+                font-size: 24px !important;
+                font-weight: 600 !important;
+                padding: 10px 15px !important;
+                display: inline-block !important;
+                text-align: right !important;
+                width: 100% !important;
+                margin-bottom: 10px !important;
+            }
+            
+            /* Hero image - Services image styling */
+            .elementor-element-c2fb0be img,
+            .elementor-element-71dcd21 img {
+                width: 100% !important;
+                height: auto !important;
+                display: block !important;
+            }
+            
+        }
+        
+        @media (max-width: 480px) {
+            body.home .header-mobile a[href^="tel:"] {
+                font-size: 22px !important;
+            }
+            
+            /* Hero image - Services image styling */
+            .elementor-element-c2fb0be img,
+            .elementor-element-71dcd21 img {
+                width: 100% !important;
+                height: auto !important;
+                display: block !important;
+            }
+        }
+        
+        /* Denti-Cal Banner - Clean white background */
+        .elementor-element-dentical-banner {
+            background: #ffffff !important;
+            padding: 40px 20px !important;
+            margin-top: 0 !important;
+            border-bottom: 1px solid #e9ecef !important;
+        }
+        .elementor-element-dentical-banner > div > div:first-child {
+            font-size: 32px !important;
+            font-weight: 700 !important;
+            color: #0097A8 !important;
+            margin-bottom: 12px !important;
+        }
+        .elementor-element-dentical-banner > div > div:nth-child(2) {
+            font-size: 18px !important;
+            font-weight: 400 !important;
+            color: #666 !important;
+            margin-bottom: 20px !important;
+        }
+        .elementor-element-dentical-banner a[href^="tel:"] {
+            font-size: 22px !important;
+            font-weight: 600 !important;
+            color: #fff !important;
+            background: #0097A8 !important;
+            padding: 14px 28px !important;
+            border-radius: 50px !important;
+            text-decoration: none !important;
+            display: inline-block !important;
+            transition: all 0.3s ease !important;
+        }
+        .elementor-element-dentical-banner a[href^="tel:"]:hover {
+            background: #007a87 !important;
+            transform: translateY(-2px) !important;
+            box-shadow: 0 4px 12px rgba(0, 151, 168, 0.3) !important;
+        }
+        
+        /* Remove white space from top */
+        body {
+            margin-top: 0 !important;
+            padding-top: 0 !important;
+        }
+        .site-content {
+            margin-top: 0 !important;
+            padding-top: 0 !important;
+        }
+        .elementor-element-52557fa {
+            padding-top: 10px !important;
+            margin-top: 0 !important;
+            background: transparent !important;
+        }
+        .elementor-element-222b55f,
+        .elementor-element-1214779 {
+            background: transparent !important;
+        }
+        
+        /* Hero image section at top - full width */
+        .elementor-element-hero-image-section {
+            width: 100% !important;
+            max-width: 100% !important;
+            padding: 0 !important;
+            margin: 0 !important;
+        }
+        .elementor-element-hero-image-section .e-con-inner {
+            padding: 0 !important;
+            max-width: 100% !important;
+        }
+        .elementor-element-hero-image-section img {
+            width: 100% !important;
+            height: auto !important;
+            display: block !important;
+        }
+        
+        /* Top banner section layout */
+        @media (min-width: 769px) {
+            .elementor-element-52557fa .e-con-inner {
+                display: flex !important;
+                flex-direction: row !important;
+                gap: 30px !important;
+                align-items: stretch !important;
+            }
+            .elementor-element-222b55f {
+                flex: 1 !important;
+            }
+            .elementor-element-1214779 {
+                flex: 1 !important;
+            }
+        }
+        
+        /* Hero image - Services image styling */
+        .elementor-element-c2fb0be img,
+        .elementor-element-71dcd21 img {
+            width: 100% !important;
+            height: auto !important;
+            display: block !important;
+            object-fit: cover !important;
+        }
+        
+        /* Featured Services Grid - Desktop 3 columns */
+        .elementor-element-0193e69.e-grid {
+            display: grid !important;
+            grid-template-columns: repeat(3, 1fr) !important;
+            gap: 30px !important;
+            justify-items: center !important;
+            align-items: start !important;
+        }
+        
+        /* Promotional images side by side */
+        .elementor-element-ec2fdd1 {
+            display: flex !important;
+            flex-direction: row !important;
+            gap: 20px !important;
+            justify-content: center !important;
+            align-items: stretch !important;
+        }
+        .elementor-element-ec2fdd1 .e-con-child {
+            flex: 1 !important;
+        }
+        .elementor-element-ec2fdd1 img {
+            width: 100% !important;
+            height: auto !important;
+            border-radius: 8px !important;
+        }
+        
+        /* Button styling */
+        .elementor-button {
+            transition: all 0.3s ease !important;
+        }
+        .yellow-btn .elementor-button {
+            background-color: #FFD700 !important;
+            color: #000 !important;
+            font-weight: 700 !important;
+            border: 2px solid #000 !important;
+        }
+        .green-btn .elementor-button {
+            background-color: #0097A8 !important;
+            color: white !important;
+            font-weight: 700 !important;
+        }
+        
+        /* Map centering on desktop */
+        @media (min-width: 769px) {
+            .elementor-element-3be93fb {
+                display: flex !important;
+                justify-content: center !important;
+                align-items: center !important;
+            }
+            .elementor-element-3b3d607 {
+                text-align: center !important;
+            }
+            .elementor-element-3b3d607 img {
+                margin: 0 auto !important;
+                display: block !important;
+            }
+        }
+        
+        /* First promotional image - Focus on woman and daughter (left side) */
+        .elementor-element-14c2d6c {
+            overflow: hidden !important;
+        }
+        .elementor-element-14c2d6c img {
+            width: 100% !important;
+            height: 100% !important;
+            object-fit: cover !important;
+            object-position: left center !important;
+        }
+        
+        /* Mobile Optimization - Centering & Layout */
+        @media (max-width: 768px) {
+            /* Denti-Cal Banner - Clean white background on mobile */
+            .elementor-element-dentical-banner {
+                padding: 30px 20px !important;
+                margin-top: 0 !important;
+                background: #ffffff !important;
+                border-bottom: 1px solid #e9ecef !important;
+            }
+            .elementor-element-dentical-banner > div > div:first-child {
+                font-size: 28px !important;
+                font-weight: 700 !important;
+                color: #0097A8 !important;
+                margin-bottom: 12px !important;
+            }
+            .elementor-element-dentical-banner > div > div:nth-child(2) {
+                font-size: 16px !important;
+                font-weight: 400 !important;
+                color: #666 !important;
+                margin-bottom: 20px !important;
+            }
+            .elementor-element-dentical-banner a[href^="tel:"] {
+                font-size: 20px !important;
+                padding: 12px 24px !important;
+            }
+            
+            /* Reduce top section padding - remove white space */
+            .elementor-element-52557fa {
+                padding-top: 10px !important;
+                margin-top: 0 !important;
+                padding-bottom: 10px !important;
+            }
+            
+            /* Remove white space from body */
+            body {
+                margin-top: 0 !important;
+                padding-top: 0 !important;
+            }
+            
+            .site-content {
+                margin-top: 0 !important;
+                padding-top: 0 !important;
+            }
+            
+            /* Hero image - Services image styling */
+            .elementor-element-c2fb0be img,
+            .elementor-element-71dcd21 img {
+                width: 100% !important;
+                height: auto !important;
+                display: block !important;
+            }
+            
+            /* Center all text content on mobile */
+            .elementor-heading-title,
+            .elementor-widget-heading,
+            .elementor-widget-text-editor {
+                text-align: center !important;
+            }
+            
+            /* Center buttons */
+            .elementor-button-wrapper {
+                display: flex !important;
+                justify-content: center !important;
+            }
+            
+            /* Center images */
+            .elementor-widget-image {
+                text-align: center !important;
+            }
+            .elementor-widget-image img {
+                margin: 0 auto !important;
+            }
+            
+            /* Featured Services Grid - 3 columns on desktop, 1 on mobile */
+            .elementor-element-0193e69.e-grid {
+                display: grid !important;
+                grid-template-columns: repeat(3, 1fr) !important;
+                gap: 30px !important;
+                justify-items: center !important;
+            }
+            
+            @media (max-width: 768px) {
+                .elementor-element-0193e69.e-grid {
+                    grid-template-columns: 1fr !important;
+                    gap: 20px !important;
+                }
+            }
+            
+            /* Service cards centered and properly sized */
+            .hm-feature-service {
+                text-align: center !important;
+                width: 100% !important;
+                max-width: 300px !important;
+            }
+            .hm-feature-service .elementor-image-box-wrapper {
+                display: flex !important;
+                flex-direction: column !important;
+                align-items: center !important;
+            }
+            .hm-feature-service img {
+                width: 100% !important;
+                height: auto !important;
+                border-radius: 8px !important;
+                object-fit: cover !important;
+            }
+            .hm-feature-service .elementor-image-box-title {
+                margin-top: 15px !important;
+                font-size: 18px !important;
+                font-weight: 600 !important;
+            }
+            
+            /* Smile Gallery - Stack on mobile */
+            .elementor-element-1540e27 .e-con-inner {
+                flex-direction: column !important;
+                gap: 30px !important;
+            }
+            
+            /* Reviews Grid - Stack on mobile */
+            .elementor-element-c63efac.e-grid {
+                grid-template-columns: 1fr !important;
+                gap: 20px !important;
+            }
+            
+            /* Payment Plans - Center logos */
+            .elementor-element-1d5d1b4 {
+                display: flex !important;
+                flex-direction: column !important;
+                align-items: center !important;
+                gap: 20px !important;
+            }
+            
+            /* Special Offers Grid - Stack on mobile */
+            .elementor-element-2b35ce5.e-grid {
+                grid-template-columns: 1fr !important;
+                gap: 20px !important;
+            }
+            
+            /* Location Section - Stack on mobile */
+            .elementor-element-3845c7f .e-con-inner {
+                display: flex !important;
+                flex-direction: column !important;
+            }
+            
+            /* Business Hours - Mobile display */
+            .elementor-element-996803f table {
+                width: 100% !important;
+            }
+            .elementor-element-996803f td {
+                padding: 8px 15px 8px 0 !important;
+                font-size: 16px !important;
+            }
+            
+            /* Business Hours - Proper table formatting - No borders */
+            .elementor-element-996803f table {
+                width: 100% !important;
+                border-collapse: collapse !important;
+                border: none !important;
+            }
+            .elementor-element-996803f table td,
+            .elementor-element-996803f table tr {
+                border: none !important;
+            }
+            .elementor-element-996803f td {
+                padding: 8px 20px 8px 0 !important;
+                vertical-align: top !important;
+                text-align: left !important;
+                border: none !important;
+            }
+            .elementor-element-996803f td:first-child {
+                font-weight: 600 !important;
+                white-space: nowrap !important;
+                min-width: 60px !important;
+            }
+            
+            /* First promotional image - Focus on woman and daughter (left side) */
+            .elementor-element-14c2d6c {
+                overflow: hidden !important;
+            }
+            .elementor-element-14c2d6c img {
+                width: 100% !important;
+                height: 100% !important;
+                object-fit: cover !important;
+                object-position: left center !important;
+            }
+            
+            @media (max-width: 768px) {
+                .elementor-element-14c2d6c img {
+                    object-position: left center !important;
+                    max-height: 400px !important;
+                }
+            }
+            
+            /* Make all phone numbers prominent and clickable */
+            a[href^="tel:"] {
+                color: #0097A8 !important;
+                text-decoration: none !important;
+                font-weight: 600 !important;
+                font-size: 20px !important;
+                display: inline-block !important;
+                padding: 5px 0 !important;
+            }
+            
+            a[href^="tel:"]:hover,
+            a[href^="tel:"]:active {
+                color: #007a88 !important;
+                text-decoration: underline !important;
+            }
+            
+            /* Emergency section CTA */
+            .elementor-element-e5d60b4 .elementor-button {
+                width: 100% !important;
+                max-width: 100% !important;
+                text-align: center !important;
+                font-size: 18px !important;
+                padding: 15px 20px !important;
+                background-color: #FFD700 !important;
+                color: #000 !important;
+                font-weight: 700 !important;
+                border-radius: 8px !important;
+                border: 2px solid #000 !important;
+            }
+            .elementor-element-e5d60b4 .elementor-button:hover {
+                background-color: #FFA500 !important;
+            }
+            
+            /* Denti-Cal banner phone link */
+            .elementor-element-dentical-banner a[href^="tel:"] {
+                font-size: 20px !important;
+                padding: 12px 24px !important;
+                margin-top: 10px !important;
+            }
+            
+            /* Top banner section - stack on mobile and remove background boxes */
+            .elementor-element-52557fa {
+                background: transparent !important;
+                background-color: transparent !important;
+            }
+            .elementor-element-52557fa .e-con-inner {
+                flex-direction: column !important;
+            }
+            .elementor-element-222b55f,
+            .elementor-element-1214779 {
+                background: transparent !important;
+                background-color: transparent !important;
+            }
+            
+            /* Hero image section at top */
+            .elementor-element-hero-image-section {
+                width: 100% !important;
+                max-width: 100% !important;
+            }
+            .elementor-element-hero-image-section img {
+                width: 100% !important;
+                height: auto !important;
+                display: block !important;
+            }
+            
+            /* Main content section - stack on mobile */
+            .elementor-element-67d6ed2 {
+                flex-direction: column !important;
+            }
+            
+            /* Hero image - Services image styling */
+            .elementor-element-c2fb0be img,
+            .elementor-element-71dcd21 img {
+                width: 100% !important;
+                height: auto !important;
+                display: block !important;
+            }
+            
+            /* Promotional images - side by side on desktop, stack on mobile */
+            .elementor-element-ec2fdd1 {
+                display: flex !important;
+                flex-direction: row !important;
+                gap: 20px !important;
+                justify-content: center !important;
+                align-items: center !important;
+            }
+            .elementor-element-ec2fdd1 .e-con-child {
+                flex: 1 !important;
+                max-width: 50% !important;
+            }
+            .elementor-element-ec2fdd1 img {
+                width: 100% !important;
+                height: auto !important;
+                border-radius: 8px !important;
+            }
+            
+            @media (max-width: 768px) {
+                .elementor-element-ec2fdd1 {
+                    flex-direction: column !important;
+                }
+                .elementor-element-ec2fdd1 .e-con-child {
+                    width: 100% !important;
+                    max-width: 100% !important;
+                }
+            }
+            
+            /* Claim button - full width on mobile */
+            .elementor-element-5151cc0 .elementor-button {
+                width: 100% !important;
+                max-width: 100% !important;
+                text-align: center !important;
+                font-size: 18px !important;
+                padding: 15px 20px !important;
+                background-color: #0097A8 !important;
+                color: white !important;
+                font-weight: 700 !important;
+                border-radius: 8px !important;
+                border: none !important;
+            }
+            .elementor-element-5151cc0 .elementor-button:hover {
+                background-color: #007a87 !important;
+            }
+        }
+        
+        /* Ensure all phone numbers are clickable and prominent */
+        a[href^="tel:"] {
+            cursor: pointer !important;
+            -webkit-tap-highlight-color: rgba(0, 151, 168, 0.3) !important;
+            transition: all 0.2s ease !important;
+        }
+        
+        a[href^="tel:"]:active {
+            transform: scale(0.98) !important;
+        }
+        
+        /* Desktop phone number styling */
+        @media (min-width: 769px) {
+            a[href^="tel:"] {
+                color: #0097A8 !important;
+                font-weight: 600 !important;
+            }
+        }
+        
+            /* Special offers clickable */
+            .elementor-element-2b35ce5 > a {
+                display: block;
+                transition: transform 0.2s ease;
+            }
+            .elementor-element-2b35ce5 > a:active {
+                transform: scale(0.98);
+            }
+            
+            /* Make sure contact page link button is prominent */
+            .elementor-element-5151cc0 .elementor-button,
+        .elementor-element-5151cc0 .elementor-button:hover {
+            background-color: #0097A8 !important;
+            color: white !important;
+            border: none !important;
+        }
+        
+        /* ============================================
+           COMPREHENSIVE DESIGN FIX - ALL ISSUES
+           ============================================ */
+        
+        /* STEP 1: Remove ALL yellow/orange boxes and weird colored elements */
+        * {
+            box-sizing: border-box;
+        }
+        
+        /* Remove any stray yellow/orange background boxes */
+        div[style*="background-color: #FFD700"],
+        div[style*="background-color: #FFA500"],
+        div[style*="background: #FFD700"],
+        div[style*="background: #FFA500"],
+        .elementor-element[style*="background-color: #FFD700"],
+        .elementor-element[style*="background-color: #FFA500"] {
+            background: transparent !important;
+            background-color: transparent !important;
+        }
+        
+        /* Denti-Cal banner - clean white background */
+        .elementor-element-dentical-banner {
+            background: #ffffff !important;
+        }
+        
+        /* Ensure top banner section has no background color */
+        .elementor-element-52557fa {
+            background: transparent !important;
+            background-color: transparent !important;
+        }
+        
+        /* Remove any background from child containers in top banner */
+        .elementor-element-222b55f,
+        .elementor-element-1214779 {
+            background: transparent !important;
+            background-color: transparent !important;
+        }
+        
+        /* STEP 2: Clean Typography & Spacing */
+        body {
+            font-family: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif !important;
+            line-height: 1.6 !important;
+            color: #333 !important;
+        }
+        
+        /* Consistent heading sizes */
+        h1.elementor-heading-title {
+            font-size: 38px !important;
+            font-weight: 700 !important;
+            line-height: 1.2 !important;
+            margin-bottom: 20px !important;
+        }
+        
+        h2.elementor-heading-title {
+            font-size: 32px !important;
+            font-weight: 600 !important;
+            line-height: 1.3 !important;
+            margin-bottom: 16px !important;
+        }
+        
+        h3.elementor-heading-title {
+            font-size: 24px !important;
+            font-weight: 600 !important;
+            line-height: 1.4 !important;
+            margin-bottom: 12px !important;
+        }
+        
+        p {
+            font-size: 16px !important;
+            line-height: 1.6 !important;
+            margin-bottom: 16px !important;
+        }
+        
+        /* STEP 3: Consistent Section Spacing */
+        .elementor-element[data-element_type="container"] {
+            margin-bottom: 0 !important;
+        }
+        
+        .e-con-inner {
+            padding: 40px 20px !important;
+        }
+        
+        @media (min-width: 769px) {
+            .e-con-inner {
+                padding: 60px 40px !important;
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .e-con-inner {
+                padding: 32px 20px !important;
+            }
+            
+            h1.elementor-heading-title {
+                font-size: 28px !important;
+            }
+            
+            h2.elementor-heading-title {
+                font-size: 24px !important;
+            }
+            
+            h3.elementor-heading-title {
+                font-size: 20px !important;
+            }
+        }
+        
+        /* STEP 4: Fix Hero Section */
+        .elementor-element-hero-image-section {
+            margin: 0 !important;
+            padding: 0 !important;
+        }
+        
+        .elementor-element-hero-image-section img {
+            width: 100% !important;
+            height: auto !important;
+            display: block !important;
+            object-fit: cover !important;
+            object-position: center !important;
+        }
+        
+        @media (max-width: 768px) {
+            .elementor-element-hero-image-section img {
+                max-height: 400px !important;
+                object-position: left center !important;
+            }
+        }
+        
+        /* STEP 5: Clean New Patient Special Section */
+        .elementor-element-222b55f {
+            text-align: center !important;
+            padding: 30px 20px !important;
+            background: transparent !important;
+        }
+        
+        .elementor-element-5151cc0 .elementor-button {
+            border-radius: 50px !important;
+            padding: 16px 32px !important;
+            font-size: 18px !important;
+            font-weight: 700 !important;
+            text-transform: none !important;
+            letter-spacing: 0 !important;
+            box-shadow: 0 4px 12px rgba(0, 151, 168, 0.3) !important;
+        }
+        
+        /* STEP 6: Clean Healthy Smiles Section */
+        .elementor-element-1214779 {
+            text-align: center !important;
+            padding: 30px 20px !important;
+            background: transparent !important;
+        }
+        
+        /* STEP 7: Fix Featured Services Grid - Clean 3x2 Layout */
+        .elementor-element-0193e69.e-grid {
+            display: grid !important;
+            grid-template-columns: repeat(3, 1fr) !important;
+            gap: 30px !important;
+            max-width: 1200px !important;
+            margin: 0 auto !important;
+            padding: 0 20px !important;
+        }
+        
+        .hm-feature-service {
+            background: #fff !important;
+            border-radius: 12px !important;
+            padding: 20px !important;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1) !important;
+            transition: transform 0.3s ease, box-shadow 0.3s ease !important;
+            text-align: center !important;
+        }
+        
+        .hm-feature-service:hover {
+            transform: translateY(-4px) !important;
+            box-shadow: 0 4px 16px rgba(0,0,0,0.15) !important;
+        }
+        
+        .hm-feature-service img {
+            width: 100% !important;
+            height: 250px !important;
+            object-fit: cover !important;
+            border-radius: 8px !important;
+            margin-bottom: 16px !important;
+        }
+        
+        .hm-feature-service .elementor-image-box-title {
+            font-size: 18px !important;
+            font-weight: 600 !important;
+            color: #333 !important;
+            margin: 0 !important;
+        }
+        
+        @media (max-width: 768px) {
+            .elementor-element-0193e69.e-grid {
+                grid-template-columns: 1fr !important;
+                gap: 24px !important;
+            }
+            
+            .hm-feature-service img {
+                height: 200px !important;
+            }
+        }
+        
+        /* STEP 8: Fix Gallery - Clean Layout */
+        .elementor-element-1540e27 .e-con-inner {
+            display: flex !important;
+            flex-wrap: wrap !important;
+            justify-content: center !important;
+            gap: 30px !important;
+            max-width: 1400px !important;
+            margin: 0 auto !important;
+            padding: 0 20px !important;
+        }
+        
+        .elementor-element-1540e27 .e-con-child {
+            display: flex !important;
+            flex-direction: column !important;
+            width: 100% !important;
+            max-width: 400px !important;
+            align-items: center !important;
+        }
+        
+        .elementor-element-1540e27 .elementor-widget-image {
+            width: 100% !important;
+            padding: 20px !important;
+            background: #f5f5f5 !important;
+            border-radius: 12px !important;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1) !important;
+            margin-bottom: 15px !important;
+        }
+        
+        .elementor-element-1540e27 img {
+            width: 100% !important;
+            height: auto !important;
+            display: block !important;
+            object-fit: contain !important;
+            object-position: center !important;
+            border-radius: 8px !important;
+        }
+        
+        .elementor-element-1540e27 .elementor-widget-heading {
+            text-align: center !important;
+            margin-top: 10px !important;
+        }
+        
+        @media (min-width: 769px) {
+            .elementor-element-1540e27 .e-con-inner {
+                flex-direction: row !important;
+                gap: 40px !important;
+            }
+            
+            .elementor-element-1540e27 .e-con-child {
+                max-width: 450px !important;
+                flex: 0 1 auto !important;
+            }
+            
+            .elementor-element-1540e27 .elementor-widget-image {
+                padding: 30px !important;
+            }
+            
+            .elementor-element-1540e27 img {
+                max-width: 100% !important;
+                height: auto !important;
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .elementor-element-1540e27 .e-con-inner {
+                flex-direction: column !important;
+                gap: 30px !important;
+            }
+            
+            .elementor-element-1540e27 .e-con-child {
+                max-width: 100% !important;
+            }
+            
+            .elementor-element-1540e27 .elementor-widget-image {
+                padding: 20px !important;
+            }
+        }
+        
+        /* STEP 9: Fix Testimonials - Equal Height Cards */
+        .elementor-element-c63efac.e-grid {
+            display: grid !important;
+            grid-template-columns: repeat(3, 1fr) !important;
+            gap: 24px !important;
+            max-width: 1200px !important;
+            margin: 0 auto !important;
+        }
+        
+        .elementor-element-c63efac .e-con-child {
+            background: #fff !important;
+            border-radius: 12px !important;
+            padding: 24px !important;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1) !important;
+            display: flex !important;
+            flex-direction: column !important;
+            height: 100% !important;
+        }
+        
+        @media (max-width: 768px) {
+            .elementor-element-c63efac.e-grid {
+                grid-template-columns: 1fr !important;
+            }
+        }
+        
+        /* STEP 10: Fix Financing Section */
+        .elementor-element-1d5d1b4 {
+            display: flex !important;
+            justify-content: center !important;
+            align-items: center !important;
+            gap: 40px !important;
+            flex-wrap: wrap !important;
+        }
+        
+        .elementor-element-1d5d1b4 img {
+            max-width: 200px !important;
+            height: auto !important;
+        }
+        
+        /* STEP 11: Fix Special Offers - Equal Height Cards */
+        .elementor-element-2b35ce5.e-grid {
+            display: grid !important;
+            grid-template-columns: repeat(3, 1fr) !important;
+            gap: 24px !important;
+            max-width: 1200px !important;
+            margin: 0 auto !important;
+        }
+        
+        .elementor-element-2b35ce5 .e-con-child {
+            background: #fff !important;
+            border-radius: 12px !important;
+            padding: 30px !important;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1) !important;
+            display: flex !important;
+            flex-direction: column !important;
+            height: 100% !important;
+            transition: transform 0.3s ease, box-shadow 0.3s ease !important;
+        }
+        
+        .elementor-element-2b35ce5 .e-con-child:hover {
+            transform: translateY(-4px) !important;
+            box-shadow: 0 4px 16px rgba(0,0,0,0.15) !important;
+        }
+        
+        @media (max-width: 768px) {
+            .elementor-element-2b35ce5.e-grid {
+                grid-template-columns: 1fr !important;
+            }
+        }
+        
+        /* STEP 12: Fix Contact Section */
+        .elementor-element-3845c7f .e-con-inner {
+            display: grid !important;
+            grid-template-columns: 1fr 1fr !important;
+            gap: 40px !important;
+            align-items: start !important;
+        }
+        
+        @media (max-width: 768px) {
+            .elementor-element-3845c7f .e-con-inner {
+                grid-template-columns: 1fr !important;
+                gap: 30px !important;
+            }
+        }
+        
+        /* STEP 13: Clean Business Hours Table */
+        .elementor-element-996803f table {
+            width: 100% !important;
+            border-collapse: collapse !important;
+            border: none !important;
+        }
+        
+        .elementor-element-996803f table td {
+            padding: 12px 20px 12px 0 !important;
+            border: none !important;
+            vertical-align: top !important;
+        }
+        
+        .elementor-element-996803f table td:first-child {
+            font-weight: 600 !important;
+            min-width: 100px !important;
+        }
+        
+        /* STEP 14: Remove Duplicate CTAs - Keep Only Primary Ones */
+        /* Emergency section button - keep but style properly */
+        .elementor-element-e5d60b4 .elementor-button {
+            background-color: #0097A8 !important;
+            color: white !important;
+            border: none !important;
+            border-radius: 50px !important;
+            padding: 16px 32px !important;
+            font-size: 18px !important;
+            font-weight: 700 !important;
+            box-shadow: 0 4px 12px rgba(0, 151, 168, 0.3) !important;
+        }
+        
+        .elementor-element-e5d60b4 .elementor-button:hover {
+            background-color: #007a87 !important;
+            transform: translateY(-2px) !important;
+            box-shadow: 0 6px 16px rgba(0, 151, 168, 0.4) !important;
+        }
+        
+        /* STEP 15: Fix Promotional Images */
+        .elementor-element-ec2fdd1 {
+            display: grid !important;
+            grid-template-columns: repeat(2, 1fr) !important;
+            gap: 24px !important;
+            max-width: 800px !important;
+            margin: 0 auto !important;
+        }
+        
+        .elementor-element-ec2fdd1 img {
+            width: 100% !important;
+            height: auto !important;
+            border-radius: 12px !important;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1) !important;
+        }
+        
+        @media (max-width: 768px) {
+            .elementor-element-ec2fdd1 {
+                grid-template-columns: 1fr !important;
+            }
+        }
+        
+        /* STEP 16: Remove any popup/widget interference */
+        .zd-plugin,
+        iframe[src*="zocdoc"],
+        div[class*="zocdoc"] {
+            display: none !important;
+        }
+        
+        /* STEP 17: Clean Footer */
+        .elementor-element-3845c7f {
+            background: #f8f9fa !important;
+            border-top: 1px solid #e9ecef !important;
+        }
+        
+        /* STEP 18: Phone Number Box Styling */
+        .elementor-element-f713c16 .elementor-widget-container {
+            background: #fff !important;
+            padding: 20px 24px 16px 24px !important;
+            border-radius: 12px !important;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1) !important;
+            text-align: center !important;
+            max-width: 500px !important;
+            margin: 30px auto 20px auto !important;
+        }
+        
+        .elementor-element-f713c16 p {
+            margin: 8px 0 4px 0 !important;
+        }
+        
+        .elementor-element-f713c16 p:last-child {
+            margin-bottom: 0 !important;
+        }
+        
+        .elementor-element-f713c16 a[href^="tel:"] {
+            font-size: 24px !important;
+            font-weight: 700 !important;
+            color: #0097A8 !important;
+            text-decoration: none !important;
+            display: inline-block !important;
+        }
+        
+        /* STEP 19: Remove any remaining yellow/orange from buttons except Denti-Cal banner */
+        .elementor-button:not(.elementor-element-dentical-banner .elementor-button) {
+            background-color: #0097A8 !important;
+            color: white !important;
+        }
+        
+        .yellow-btn .elementor-button {
+            background-color: #0097A8 !important;
+            color: white !important;
+            border: none !important;
+        }
+        
+        /* STEP 20: Final Mobile Polish */
+        @media (max-width: 768px) {
+            /* Remove any horizontal scroll */
+            body {
+                overflow-x: hidden !important;
+            }
+            
+            /* Ensure all containers are full width */
+            .e-con-inner {
+                max-width: 100% !important;
+                padding-left: 20px !important;
+                padding-right: 20px !important;
+            }
+            
+            /* Center all text on mobile */
+            .elementor-heading-title,
+            .elementor-widget-text-editor p {
+                text-align: center !important;
+            }
+            
+            /* Full width buttons on mobile */
+            .elementor-button {
+                width: 100% !important;
+                max-width: 100% !important;
+            }
+        }
+        
+    </style>
+</head>
+<body class="home wp-singular page-template page-template-elementor_header_footer page page-id-11 wp-custom-logo wp-embed-responsive wp-theme-generatepress wp-child-theme-generatepress_child post-image-aligned-center slideout-enabled slideout-mobile sticky-menu-fade no-sidebar nav-below-header separate-containers header-aligned-center dropdown-hover elementor-default elementor-template-full-width elementor-kit-8 elementor-page elementor-page-11">
+
+<div class="site grid-container container hfeed" id="page">
+    <div class="site-content" id="content">
+        <div data-elementor-type="wp-page" data-elementor-id="11" class="elementor elementor-11">
+            
+            <!-- Denti-Cal Acceptance Banner -->
+            <div class="elementor-element elementor-element-dentical-banner max-width e-flex e-con-boxed e-con e-parent" data-id="dentical-banner" data-element_type="container" style="background: #ffffff; color: #333; padding: 40px 20px; text-align: center; margin-top: 0; border-bottom: 1px solid #e9ecef;">
+                <div class="e-con-inner">
+                    <div style="font-size: 32px; font-weight: 700; margin-bottom: 12px; color: #0097A8;">We Accept Denti-Cal & Medi-Cal</div>
+                    <div style="font-size: 18px; font-weight: 400; color: #666; margin-bottom: 20px;">Quality dental care for all patients. Hablamos Español.</div>
+                    <div style="margin-top: 20px;">
+                        <a href="tel:7148356677" style="color: #0097A8; font-size: 22px; font-weight: 600; text-decoration: none; display: inline-block; padding: 14px 28px; background: #0097A8; color: #fff; border-radius: 50px; transition: all 0.3s ease;">📞 Call: 714.835.6677</a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Hero Image Section -->
+            <div class="elementor-element elementor-element-hero-image-section max-width e-flex e-con-boxed e-con e-parent" data-id="hero-image-section" data-element_type="container" style="padding: 0; margin: 0;">
+                <div class="e-con-inner" style="padding: 0;">
+                    <div class="elementor-element elementor-element-71dcd21 e-con-full e-flex e-con e-child" data-id="71dcd21" data-element_type="container">
+                        <div class="elementor-element elementor-element-c2fb0be elementor-widget elementor-widget-image" data-id="c2fb0be" data-element_type="widget" data-widget_type="image.default">
+                            <div class="elementor-widget-container">
+                                <img loading="lazy" decoding="async" width="1200" height="600" src="https://cereskfdental.com/wp-content/uploads/2025/02/index-welcome.jpg" class="attachment-full size-full wp-image-hero-services" alt="Happy patient with beautiful smile at Santa Ana Magic Smile" style="width: 100%; height: auto; display: block;" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Top Banner Section -->
+            <div class="elementor-element elementor-element-52557fa max-width e-flex e-con-boxed e-con e-parent" data-id="52557fa" data-element_type="container" id="health_main" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+                <div class="e-con-inner">
+                    <div class="elementor-element elementor-element-222b55f e-con-full e-flex e-con e-child" data-id="222b55f" data-element_type="container" id="health_left">
+                        <div class="elementor-element elementor-element-bd2b4d5 elementor-widget-mobile__width-initial elementor-widget elementor-widget-heading" data-id="bd2b4d5" data-element_type="widget" data-widget_type="heading.default">
+                            <div class="elementor-widget-container">
+                                <a href="https://www.santaanamagicsmile.com/contact/" style="text-decoration: none; color: inherit;">
+                                    <h2 class="elementor-heading-title elementor-size-default">NEW PATIENT SPECIAL - X-Rays, Exams, &amp; Cleanings <span style="color:#0097A8">$90</span></h2>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="elementor-element elementor-element-5151cc0 green-btn  elementor-align-left elementor-mobile-align-center elementor-widget elementor-widget-button" data-id="5151cc0" data-element_type="widget" data-widget_type="button.default">
+                            <div class="elementor-widget-container">
+                                <div class="elementor-button-wrapper">
+                                    <a class="elementor-button elementor-button-link elementor-size-sm" href="https://www.santaanamagicsmile.com/contact/">
+                                        <span class="elementor-button-content-wrapper">
+                                            <span class="elementor-button-text">Claim $90 New Patient Deal</span>
+                                        </span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="elementor-element elementor-element-1214779 e-con-full e-flex e-con e-child" data-id="1214779" data-element_type="container" id="health_right">
+                        <div class="elementor-element elementor-element-6d89786 elementor-widget elementor-widget-heading" data-id="6d89786" data-element_type="widget" data-widget_type="heading.default">
+                            <div class="elementor-widget-container">
+                                <div class="elementor-heading-title elementor-size-default">Healthy Smiles</div>
+                            </div>
+                        </div>
+                        <div class="elementor-element elementor-element-7274b34 elementor-widget elementor-widget-heading" data-id="7274b34" data-element_type="widget" data-widget_type="heading.default">
+                            <div class="elementor-widget-container">
+                                <div class="elementor-heading-title elementor-size-default"><span class="separate-line-fixed">One Smile at a Time.</span>
+                                Emergency Same Day 
+                                <span class="separate-line">Appointments Available.</span></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Main Content Section -->
+            <div class="elementor-element elementor-element-a825dab max-width e-flex e-con-boxed e-con e-parent" data-id="a825dab" data-element_type="container">
+                <div class="e-con-inner">
+                    <div class="elementor-element elementor-element-12d2e1c e-con-full e-flex e-con e-child" data-id="12d2e1c" data-element_type="container">
+                        <div class="elementor-element elementor-element-785a33e elementor-widget elementor-widget-heading" data-id="785a33e" data-element_type="widget" data-widget_type="heading.default">
+                            <div class="elementor-widget-container">
+                                <h1 class="elementor-heading-title elementor-size-default">Top Rated Dentist in Santa Ana</h1>
+                            </div>
+                        </div>
+                        <div class="elementor-element elementor-element-85ae70e elementor-widget elementor-widget-heading" data-id="85ae70e" data-element_type="widget" data-widget_type="heading.default">
+                            <div class="elementor-widget-container">
+                                <h2 class="elementor-heading-title elementor-size-default">General Dentistry, Cosmetic Dentistry, Dental Implants  <span class="separate-line">and Orthodontics - all under one roof.</span></h2>
+                            </div>
+                        </div>
+                        <div class="elementor-element elementor-element-67d6ed2 e-con-full e-flex e-con e-child" data-id="67d6ed2" data-element_type="container">
+                            <div class="elementor-element elementor-element-57ad514 e-con-full e-flex e-con e-child" data-id="57ad514" data-element_type="container">
+                                <div class="elementor-element elementor-element-ac6c95f elementor-widget elementor-widget-text-editor" data-id="ac6c95f" data-element_type="widget" data-widget_type="text-editor.default">
+                                    <div class="elementor-widget-container">
+                                        <p>Full-service dental care in Santa Ana. We accept Denti-Cal, Medi-Cal, and major PPO insurances. Same-day appointments available.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="elementor-element elementor-element-ec2fdd1 e-con-full e-flex e-con e-child" data-id="ec2fdd1" data-element_type="container">
+                            <div class="elementor-element elementor-element-eadf621 e-con-full e-flex e-con e-child" data-id="eadf621" data-element_type="container">
+                                <div class="elementor-element elementor-element-14c2d6c elementor-widget elementor-widget-image" data-id="14c2d6c" data-element_type="widget" data-widget_type="image.default">
+                                    <div class="elementor-widget-container">
+                                        <img loading="lazy" decoding="async" width="1024" height="1024" src="https://www.santaanamagicsmile.com/wp-content/uploads/2025/05/Deep-Teal-Blue-and-White-Modern-Dental-Care-Clinic-Services-Promotion-Instagram-Post-1024x1024.png" class="attachment-large size-large wp-image-3113" alt="complimentary orthodontic consultation image for Santa Ana Magic Smile" srcset="https://www.santaanamagicsmile.com/wp-content/uploads/2025/05/Deep-Teal-Blue-and-White-Modern-Dental-Care-Clinic-Services-Promotion-Instagram-Post-1024x1024.png 1024w, https://www.santaanamagicsmile.com/wp-content/uploads/2025/05/Deep-Teal-Blue-and-White-Modern-Dental-Care-Clinic-Services-Promotion-Instagram-Post-300x300.png 300w, https://www.santaanamagicsmile.com/wp-content/uploads/2025/05/Deep-Teal-Blue-and-White-Modern-Dental-Care-Clinic-Services-Promotion-Instagram-Post-150x150.png 150w, https://www.santaanamagicsmile.com/wp-content/uploads/2025/05/Deep-Teal-Blue-and-White-Modern-Dental-Care-Clinic-Services-Promotion-Instagram-Post-768x768.png 768w, https://www.santaanamagicsmile.com/wp-content/uploads/2025/05/Deep-Teal-Blue-and-White-Modern-Dental-Care-Clinic-Services-Promotion-Instagram-Post.png 1080w" sizes="(max-width: 1024px) 100vw, 1024px" />
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="elementor-element elementor-element-6057435 e-con-full e-flex e-con e-child" data-id="6057435" data-element_type="container">
+                                <div class="elementor-element elementor-element-592f430 elementor-widget elementor-widget-image" data-id="592f430" data-element_type="widget" data-widget_type="image.default">
+                                    <div class="elementor-widget-container">
+                                        <img loading="lazy" decoding="async" width="1024" height="1024" src="https://www.santaanamagicsmile.com/wp-content/uploads/2025/08/New-Patient-Special-Santa-Ana-Updated-1024x1024.png" class="attachment-large size-large wp-image-3447" alt="New Patient Special for Santa Ana Magic Smile Updated" srcset="https://www.santaanamagicsmile.com/wp-content/uploads/2025/08/New-Patient-Special-Santa-Ana-Updated-1024x1024.png 1024w, https://www.santaanamagicsmile.com/wp-content/uploads/2025/08/New-Patient-Special-Santa-Ana-Updated-300x300.png 300w, https://www.santaanamagicsmile.com/wp-content/uploads/2025/08/New-Patient-Special-Santa-Ana-Updated-150x150.png 150w, https://www.santaanamagicsmile.com/wp-content/uploads/2025/08/New-Patient-Special-Santa-Ana-Updated-768x768.png 768w, https://www.santaanamagicsmile.com/wp-content/uploads/2025/08/New-Patient-Special-Santa-Ana-Updated.png 1080w" sizes="(max-width: 1024px) 100vw, 1024px" />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Featured Services Section -->
+            <div class="elementor-element elementor-element-f67f511 full-width e-flex e-con-boxed e-con e-parent" data-id="f67f511" data-element_type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+                <div class="e-con-inner">
+                    <div class="elementor-element elementor-element-e3f108d e-con-full e-flex e-con e-child" data-id="e3f108d" data-element_type="container">
+                        <div class="elementor-element elementor-element-af9ad91 elementor-widget elementor-widget-heading" data-id="af9ad91" data-element_type="widget" data-widget_type="heading.default">
+                            <div class="elementor-widget-container">
+                                <h2 class="elementor-heading-title elementor-size-default">Featured Services</h2>
+                            </div>
+                        </div>
+                        <div class="elementor-element elementor-element-0193e69 e-con-full e-grid e-con e-child" data-id="0193e69" data-element_type="container">
+                            <div class="elementor-element elementor-element-90c85af hm-feature-service elementor-position-top elementor-widget elementor-widget-image-box" data-id="90c85af" data-element_type="widget" data-widget_type="image-box.default">
+                                <div class="elementor-widget-container">
+                                    <div class="elementor-image-box-wrapper"><figure class="elementor-image-box-img"><a href="https://www.santaanamagicsmile.com/contact/"><img loading="lazy" decoding="async" width="255" height="357" src="https://www.santaanamagicsmile.com/wp-content/uploads/2025/03/General-Family-Dentistry.png" class="attachment-full size-full wp-image-129" alt="A family portrait featuring a man, a woman, and a child, all smiling together in a warm, outdoor setting." srcset="https://www.santaanamagicsmile.com/wp-content/uploads/2025/03/General-Family-Dentistry.png 255w, https://www.santaanamagicsmile.com/wp-content/uploads/2025/03/General-Family-Dentistry-214x300.png 214w" sizes="(max-width: 255px) 100vw, 255px" /></a></figure><div class="elementor-image-box-content"><h3 class="elementor-image-box-title"><a href="https://www.santaanamagicsmile.com/contact/" style="text-decoration: none; color: inherit;">General &amp; Family Dentistry</a></h3></div></div>
+                                </div>
+                            </div>
+                            <div class="elementor-element elementor-element-8d4689b hm-feature-service elementor-position-top elementor-widget elementor-widget-image-box" data-id="8d4689b" data-element_type="widget" data-widget_type="image-box.default">
+                                <div class="elementor-widget-container">
+                                    <div class="elementor-image-box-wrapper"><figure class="elementor-image-box-img"><a href="https://www.santaanamagicsmile.com/contact/"><img loading="lazy" decoding="async" width="255" height="357" src="https://www.santaanamagicsmile.com/wp-content/uploads/2025/03/Cosmetic-Dentistry.png" class="attachment-full size-full wp-image-130" alt="A woman with curly hair in a white sweater, looking cheerful and relaxed in a simple setting." srcset="https://www.santaanamagicsmile.com/wp-content/uploads/2025/03/Cosmetic-Dentistry.png 255w, https://www.santaanamagicsmile.com/wp-content/uploads/2025/03/Cosmetic-Dentistry-214x300.png 214w" sizes="(max-width: 255px) 100vw, 255px" /></a></figure><div class="elementor-image-box-content"><h3 class="elementor-image-box-title"><a href="https://www.santaanamagicsmile.com/contact/" style="text-decoration: none; color: inherit;">Cosmetic Dentistry</a></h3></div></div>
+                                </div>
+                            </div>
+                            <div class="elementor-element elementor-element-3328203 hm-feature-service elementor-position-top elementor-widget elementor-widget-image-box" data-id="3328203" data-element_type="widget" data-widget_type="image-box.default">
+                                <div class="elementor-widget-container">
+                                    <div class="elementor-image-box-wrapper"><figure class="elementor-image-box-img"><a href="https://www.santaanamagicsmile.com/contact/"><img loading="lazy" decoding="async" width="255" height="357" src="https://www.santaanamagicsmile.com/wp-content/uploads/2025/03/Dental-Implants-.png" class="attachment-full size-full wp-image-131" alt="A man in a chair, exuding a sense of relaxation and ease in a casual setting." srcset="https://www.santaanamagicsmile.com/wp-content/uploads/2025/03/Dental-Implants-.png 255w, https://www.santaanamagicsmile.com/wp-content/uploads/2025/03/Dental-Implants--214x300.png 214w" sizes="(max-width: 255px) 100vw, 255px" /></a></figure><div class="elementor-image-box-content"><h3 class="elementor-image-box-title"><a href="https://www.santaanamagicsmile.com/contact/" style="text-decoration: none; color: inherit;">Dental Implants</a></h3></div></div>
+                                </div>
+                            </div>
+                            <div class="elementor-element elementor-element-c129acf hm-feature-service elementor-position-top elementor-widget elementor-widget-image-box" data-id="c129acf" data-element_type="widget" data-widget_type="image-box.default">
+                                <div class="elementor-widget-container">
+                                    <div class="elementor-image-box-wrapper"><figure class="elementor-image-box-img"><a href="https://www.santaanamagicsmile.com/contact/"><img loading="lazy" decoding="async" width="255" height="357" src="https://www.santaanamagicsmile.com/wp-content/uploads/2025/03/Orthodontics.png" class="attachment-full size-full wp-image-132" alt="A woman with a joyful smile, her white teeth prominently visible, conveying a sense of warmth and friendliness." srcset="https://www.santaanamagicsmile.com/wp-content/uploads/2025/03/Orthodontics.png 255w, https://www.santaanamagicsmile.com/wp-content/uploads/2025/03/Orthodontics-214x300.png 214w" sizes="(max-width: 255px) 100vw, 255px" /></a></figure><div class="elementor-image-box-content"><h3 class="elementor-image-box-title"><a href="https://www.santaanamagicsmile.com/contact/" style="text-decoration: none; color: inherit;">Orthodontics</a></h3></div></div>
+                                </div>
+                            </div>
+                            <div class="elementor-element elementor-element-5cff88f hm-feature-service elementor-position-top elementor-widget elementor-widget-image-box" data-id="5cff88f" data-element_type="widget" data-widget_type="image-box.default">
+                                <div class="elementor-widget-container">
+                                    <div class="elementor-image-box-wrapper"><figure class="elementor-image-box-img"><a href="https://www.santaanamagicsmile.com/contact/"><img loading="lazy" decoding="async" width="255" height="357" src="https://www.santaanamagicsmile.com/wp-content/uploads/2025/04/dentures-home.png" class="attachment-full size-full wp-image-2796" alt="A blurry image of an old lady patient with a smile on a dental chair while dentures being hold by dentist hands" srcset="https://www.santaanamagicsmile.com/wp-content/uploads/2025/04/dentures-home.png 255w, https://www.santaanamagicsmile.com/wp-content/uploads/2025/04/dentures-home-214x300.png 214w" sizes="(max-width: 255px) 100vw, 255px" /></a></figure><div class="elementor-image-box-content"><h3 class="elementor-image-box-title"><a href="https://www.santaanamagicsmile.com/contact/" style="text-decoration: none; color: inherit;">Dentures</a></h3></div></div>
+                                </div>
+                            </div>
+                            <div class="elementor-element elementor-element-6bcc406 hm-feature-service elementor-position-top elementor-widget elementor-widget-image-box" data-id="6bcc406" data-element_type="widget" data-widget_type="image-box.default">
+                                <div class="elementor-widget-container">
+                                    <div class="elementor-image-box-wrapper"><figure class="elementor-image-box-img"><a href="https://www.santaanamagicsmile.com/contact/"><img loading="lazy" decoding="async" width="255" height="357" src="https://www.santaanamagicsmile.com/wp-content/uploads/2025/03/Root-Canal.png" class="attachment-full size-full wp-image-134" alt="A toothbrush with a tooth being extracted from its bristles, highlighting the importance of oral care." srcset="https://www.santaanamagicsmile.com/wp-content/uploads/2025/03/Root-Canal.png 255w, https://www.santaanamagicsmile.com/wp-content/uploads/2025/03/Root-Canal-214x300.png 214w" sizes="(max-width: 255px) 100vw, 255px" /></a></figure><div class="elementor-image-box-content"><h3 class="elementor-image-box-title"><a href="https://www.santaanamagicsmile.com/contact/" style="text-decoration: none; color: inherit;">Root Canal</a></h3></div></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Dental Emergency Section -->
+            <div class="elementor-element elementor-element-2dcff3e e-con-full hm-dental-emergency e-flex e-con e-parent" data-id="2dcff3e" data-element_type="container">
+                <div class="elementor-element elementor-element-ada19e5 full-width e-flex e-con-boxed e-con e-parent" data-id="ada19e5" data-element_type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+                    <div class="e-con-inner">
+                        <div class="elementor-element elementor-element-e27d8ea e-con-full e-flex e-con e-child" data-id="e27d8ea" data-element_type="container">
+                            <div class="elementor-element elementor-element-6839c44 elementor-widget elementor-widget-heading" data-id="6839c44" data-element_type="widget" data-widget_type="heading.default">
+                                <div class="elementor-widget-container">
+                                    <h2 class="elementor-heading-title elementor-size-default">Dental Emergency? We got you covered.</h2>
+                                </div>
+                            </div>
+                            <div class="elementor-element elementor-element-b9db766 elementor-widget elementor-widget-heading" data-id="b9db766" data-element_type="widget" data-widget_type="heading.default">
+                                <div class="elementor-widget-container">
+                                    <p class="elementor-heading-title elementor-size-default">We are open 5 days a week, including Saturday and evening appointments. <span class="separate-line">Same Day appointments available.</span></p>
+                                </div>
+                            </div>
+                            <div class="elementor-element elementor-element-5a0d831 e-con-full e-flex e-con e-child" data-id="5a0d831" data-element_type="container">
+                                <div class="elementor-element elementor-element-1e1477f e-con-full e-flex e-con e-child" data-id="1e1477f" data-element_type="container">
+                                    <div class="elementor-element elementor-element-e5d60b4 yellow-btn elementor-align-right elementor-mobile-align-center elementor-widget elementor-widget-button" data-id="e5d60b4" data-element_type="widget" data-widget_type="button.default">
+                                        <div class="elementor-widget-container">
+                                            <div class="elementor-button-wrapper">
+                                                <a class="elementor-button elementor-button-link elementor-size-sm" href="tel:7148356677">
+                                                    <span class="elementor-button-content-wrapper">
+                                                        <span class="elementor-button-text">CALL NOW: 714.835.6677</span>
+                                                    </span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Smile Gallery Section -->
+            <div class="elementor-element elementor-element-ad747c0 e-flex e-con-boxed e-con e-parent" data-id="ad747c0" data-element_type="container">
+                <div class="e-con-inner">
+                    <div class="elementor-element elementor-element-4be61ed elementor-widget elementor-widget-heading" data-id="4be61ed" data-element_type="widget" data-widget_type="heading.default">
+                        <div class="elementor-widget-container">
+                            <h2 class="elementor-heading-title elementor-size-default">Smile Gallery</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="elementor-element elementor-element-1540e27 e-flex e-con-boxed e-con e-parent" data-id="1540e27" data-element_type="container">
+                <div class="e-con-inner">
+                    <div class="elementor-element elementor-element-488f9ee e-con-full e-flex e-con e-child" data-id="488f9ee" data-element_type="container">
+                        <div class="elementor-element elementor-element-f0d5c57 elementor-widget elementor-widget-image" data-id="f0d5c57" data-element_type="widget" data-widget_type="image.default">
+                            <div class="elementor-widget-container">
+                                <img loading="lazy" decoding="async" width="719" height="815" src="https://www.santaanamagicsmile.com/wp-content/uploads/2025/11/santaana-BA1.jpg" class="attachment-large size-large wp-image-3687" alt="" srcset="https://www.santaanamagicsmile.com/wp-content/uploads/2025/11/santaana-BA1.jpg 719w, https://www.santaanamagicsmile.com/wp-content/uploads/2025/11/santaana-BA1-265x300.jpg 265w" sizes="(max-width: 719px) 100vw, 719px" />
+                            </div>
+                        </div>
+                        <div class="elementor-element elementor-element-13c3a24 elementor-widget elementor-widget-heading" data-id="13c3a24" data-element_type="widget" data-widget_type="heading.default">
+                            <div class="elementor-widget-container">
+                                <h3 class="elementor-heading-title elementor-size-default">Invisalign</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="elementor-element elementor-element-23e4eef e-con-full e-flex e-con e-child" data-id="23e4eef" data-element_type="container">
+                        <div class="elementor-element elementor-element-a53d8cc elementor-widget elementor-widget-image" data-id="a53d8cc" data-element_type="widget" data-widget_type="image.default">
+                            <div class="elementor-widget-container">
+                                <img loading="lazy" decoding="async" width="719" height="815" src="https://www.santaanamagicsmile.com/wp-content/uploads/2025/11/santaana-BA3.jpg" class="attachment-large size-large wp-image-3690" alt="" srcset="https://www.santaanamagicsmile.com/wp-content/uploads/2025/11/santaana-BA3.jpg 719w, https://www.santaanamagicsmile.com/wp-content/uploads/2025/11/santaana-BA3-265x300.jpg 265w" sizes="(max-width: 719px) 100vw, 719px" />
+                            </div>
+                        </div>
+                        <div class="elementor-element elementor-element-df7c04e elementor-widget elementor-widget-heading" data-id="df7c04e" data-element_type="widget" data-widget_type="heading.default">
+                            <div class="elementor-widget-container">
+                                <h3 class="elementor-heading-title elementor-size-default">Dental Crowns</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="elementor-element elementor-element-3046d0e e-con-full e-flex e-con e-child" data-id="3046d0e" data-element_type="container">
+                        <div class="elementor-element elementor-element-ba0a9f1 elementor-widget elementor-widget-image" data-id="ba0a9f1" data-element_type="widget" data-widget_type="image.default">
+                            <div class="elementor-widget-container">
+                                <img loading="lazy" decoding="async" width="719" height="815" src="https://www.santaanamagicsmile.com/wp-content/uploads/2025/11/santaana-BA2.jpg" class="attachment-full size-full wp-image-3688" alt="" srcset="https://www.santaanamagicsmile.com/wp-content/uploads/2025/11/santaana-BA2.jpg 719w, https://www.santaanamagicsmile.com/wp-content/uploads/2025/11/santaana-BA2-265x300.jpg 265w" sizes="(max-width: 719px) 100vw, 719px" />
+                            </div>
+                        </div>
+                        <div class="elementor-element elementor-element-1c90f9b elementor-widget elementor-widget-heading" data-id="1c90f9b" data-element_type="widget" data-widget_type="heading.default">
+                            <div class="elementor-widget-container">
+                                <h3 class="elementor-heading-title elementor-size-default">Dental Veneers</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Reviews Section -->
+            <div class="elementor-element elementor-element-d8e8f0d max-width e-flex e-con-boxed e-con e-parent" data-id="d8e8f0d" data-element_type="container">
+                <div class="e-con-inner">
+                    <div class="elementor-element elementor-element-65b83ac e-con-full e-flex e-con e-child" data-id="65b83ac" data-element_type="container">
+                        <div class="elementor-element elementor-element-d026562 elementor-widget elementor-widget-heading" data-id="d026562" data-element_type="widget" data-widget_type="heading.default">
+                            <div class="elementor-widget-container">
+                                <p class="elementor-heading-title elementor-size-default">Your neighbors love us. So will you.</p>
+                            </div>
+                        </div>
+                        <div class="elementor-element elementor-element-84dc90d elementor-widget elementor-widget-heading" data-id="84dc90d" data-element_type="widget" data-widget_type="heading.default">
+                            <div class="elementor-widget-container">
+                                <h2 class="elementor-heading-title elementor-size-default">Patients Speak</h2>
+                            </div>
+                        </div>
+                        <div class="elementor-element elementor-element-25aa202 e-con-full e-flex e-con e-child" data-id="25aa202" data-element_type="container">
+                            <div class="elementor-element elementor-element-b9545c1 e-grid e-con-full e-con e-child" data-id="b9545c1" data-element_type="container">
+                                <div class="elementor-element elementor-element-b344f62 elementor-widget elementor-widget-image" data-id="b344f62" data-element_type="widget" data-widget_type="image.default">
+                                    <div class="elementor-widget-container">
+                                        <img loading="lazy" decoding="async" width="226" height="71" src="https://www.santaanamagicsmile.com/wp-content/uploads/2025/03/Google-Reviews.png" class="attachment-full size-full wp-image-368" alt="Google Reviews" />
+                                    </div>
+                                </div>
+                                <div class="elementor-element elementor-element-d1314a8 elementor-widget elementor-widget-image" data-id="d1314a8" data-element_type="widget" data-widget_type="image.default">
+                                    <div class="elementor-widget-container">
+                                        <img loading="lazy" decoding="async" width="218" height="74" src="https://www.santaanamagicsmile.com/wp-content/uploads/2025/03/Yelp-Reviews.png" class="attachment-full size-full wp-image-369" alt="Yelp Reviews" />
+                                    </div>
+                                </div>
+                                <div class="elementor-element elementor-element-b4d6b75 elementor-widget elementor-widget-image" data-id="b4d6b75" data-element_type="widget" data-widget_type="image.default">
+                                    <div class="elementor-widget-container">
+                                        <img loading="lazy" decoding="async" width="249" height="68" src="https://www.santaanamagicsmile.com/wp-content/uploads/2025/03/Facebook.png" class="attachment-full size-full wp-image-370" alt="Facebook Reviews" />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="elementor-element elementor-element-784ec18 e-con-full e-flex e-con e-child" data-id="784ec18" data-element_type="container">
+                            <div class="elementor-element elementor-element-c63efac e-con-full e-grid e-con e-child" data-id="c63efac" data-element_type="container">
+                                <div class="elementor-element elementor-element-842b852 e-con-full e-flex e-con e-child" data-id="842b852" data-element_type="container">
+                                    <div class="elementor-element elementor-element-8457582 elementor-widget elementor-widget-heading" data-id="8457582" data-element_type="widget" data-widget_type="heading.default">
+                                        <div class="elementor-widget-container">
+                                            <p class="elementor-heading-title elementor-size-default">R. Brown</p>
+                                        </div>
+                                    </div>
+                                    <div class="elementor-element elementor-element-a335f17 elementor-widget elementor-widget-image" data-id="a335f17" data-element_type="widget" data-widget_type="image.default">
+                                        <div class="elementor-widget-container">
+                                            <img loading="lazy" decoding="async" width="98" height="21" src="https://www.santaanamagicsmile.com/wp-content/uploads/2025/03/5-start-rating.png" class="attachment-full size-full wp-image-371" alt="5 star rating" />
+                                        </div>
+                                    </div>
+                                    <div class="elementor-element elementor-element-8b05379 elementor-widget elementor-widget-text-editor" data-id="8b05379" data-element_type="widget" data-widget_type="text-editor.default">
+                                        <div class="elementor-widget-container">
+                                            <p>I have been coming to Dr. Moulik for almost 2 years now and she and her staff have always been so kind and supportive. She always finds time to...</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="elementor-element elementor-element-2b83262 e-con-full e-flex e-con e-child" data-id="2b83262" data-element_type="container">
+                                    <div class="elementor-element elementor-element-4b6b974 elementor-widget elementor-widget-heading" data-id="4b6b974" data-element_type="widget" data-widget_type="heading.default">
+                                        <div class="elementor-widget-container">
+                                            <p class="elementor-heading-title elementor-size-default">Aniket D.</p>
+                                        </div>
+                                    </div>
+                                    <div class="elementor-element elementor-element-45071a4 elementor-widget elementor-widget-image" data-id="45071a4" data-element_type="widget" data-widget_type="image.default">
+                                        <div class="elementor-widget-container">
+                                            <img loading="lazy" decoding="async" width="98" height="21" src="https://www.santaanamagicsmile.com/wp-content/uploads/2025/03/5-start-rating.png" class="attachment-full size-full wp-image-371" alt="5 star rating" />
+                                        </div>
+                                    </div>
+                                    <div class="elementor-element elementor-element-f6c62ff elementor-widget elementor-widget-text-editor" data-id="f6c62ff" data-element_type="widget" data-widget_type="text-editor.default">
+                                        <div class="elementor-widget-container">
+                                            <p>I recently had a root canal procedure done at Santa Ana Magic Smile, and I couldn't be more impressed with the level of care I received...</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="elementor-element elementor-element-df8fc73 e-con-full e-flex e-con e-child" data-id="df8fc73" data-element_type="container">
+                                    <div class="elementor-element elementor-element-2b5ce6e elementor-widget elementor-widget-heading" data-id="2b5ce6e" data-element_type="widget" data-widget_type="heading.default">
+                                        <div class="elementor-widget-container">
+                                            <p class="elementor-heading-title elementor-size-default">Nina v.</p>
+                                        </div>
+                                    </div>
+                                    <div class="elementor-element elementor-element-155a4dc elementor-widget elementor-widget-image" data-id="155a4dc" data-element_type="widget" data-widget_type="image.default">
+                                        <div class="elementor-widget-container">
+                                            <img loading="lazy" decoding="async" width="98" height="21" src="https://www.santaanamagicsmile.com/wp-content/uploads/2025/03/5-start-rating.png" class="attachment-full size-full wp-image-371" alt="5 star rating" />
+                                        </div>
+                                    </div>
+                                    <div class="elementor-element elementor-element-f800b38 elementor-widget elementor-widget-text-editor" data-id="f800b38" data-element_type="widget" data-widget_type="text-editor.default">
+                                        <div class="elementor-widget-container">
+                                            <p>The staff is always super sweet and friendly. I never have to wait longer than 5 minutes. I enjoy their location so close to home and will always book...</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="elementor-element elementor-element-a3d7920 e-con-full e-flex e-con e-child" data-id="a3d7920" data-element_type="container">
+                                    <div class="elementor-element elementor-element-4893572 elementor-widget elementor-widget-heading" data-id="4893572" data-element_type="widget" data-widget_type="heading.default">
+                                        <div class="elementor-widget-container">
+                                            <p class="elementor-heading-title elementor-size-default">Yesenia O.</p>
+                                        </div>
+                                    </div>
+                                    <div class="elementor-element elementor-element-b5032cb elementor-widget elementor-widget-image" data-id="b5032cb" data-element_type="widget" data-widget_type="image.default">
+                                        <div class="elementor-widget-container">
+                                            <img loading="lazy" decoding="async" width="98" height="21" src="https://www.santaanamagicsmile.com/wp-content/uploads/2025/03/5-start-rating.png" class="attachment-full size-full wp-image-371" alt="5 star rating" />
+                                        </div>
+                                    </div>
+                                    <div class="elementor-element elementor-element-5a4d854 elementor-widget elementor-widget-text-editor" data-id="5a4d854" data-element_type="widget" data-widget_type="text-editor.default">
+                                        <div class="elementor-widget-container">
+                                            <p>Doctor and assistant were very genuine. amazing cleaning and very affordable price im definitely going back for my 6 month cleaning</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Payment Plans Section -->
+            <div class="elementor-element elementor-element-10bc7e1 e-flex e-con-boxed e-con e-parent" data-id="10bc7e1" data-element_type="container">
+                <div class="e-con-inner">
+                    <div class="elementor-element elementor-element-cc64749 e-con-full e-flex e-con e-child" data-id="cc64749" data-element_type="container">
+                        <div class="elementor-element elementor-element-f95d141 elementor-widget elementor-widget-heading" data-id="f95d141" data-element_type="widget" data-widget_type="heading.default">
+                            <div class="elementor-widget-container">
+                                <h2 class="elementor-heading-title elementor-size-default">Payment Plans and Financing</h2>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="elementor-element elementor-element-1d5d1b4 e-con-full e-flex e-con e-child" data-id="1d5d1b4" data-element_type="container">
+                        <div class="elementor-element elementor-element-b215ad4 elementor-widget__width-auto elementor-widget elementor-widget-image" data-id="b215ad4" data-element_type="widget" data-widget_type="image.default">
+                            <div class="elementor-widget-container">
+                                <img loading="lazy" decoding="async" width="345" height="120" src="https://www.santaanamagicsmile.com/wp-content/uploads/2025/03/cherry-financing.jpg" class="attachment-full size-full wp-image-651" alt="Cherry Financing Logo" srcset="https://www.santaanamagicsmile.com/wp-content/uploads/2025/03/cherry-financing.jpg 345w, https://www.santaanamagicsmile.com/wp-content/uploads/2025/03/cherry-financing-300x104.jpg 300w" sizes="(max-width: 345px) 100vw, 345px" />
+                            </div>
+                        </div>
+                        <div class="elementor-element elementor-element-cc41440 elementor-widget__width-auto elementor-widget elementor-widget-image" data-id="cc41440" data-element_type="widget" data-widget_type="image.default">
+                            <div class="elementor-widget-container">
+                                <img loading="lazy" decoding="async" width="345" height="120" src="https://www.santaanamagicsmile.com/wp-content/uploads/2025/03/care-credit.jpg" class="attachment-full size-full wp-image-647" alt="Care Credit Logo" srcset="https://www.santaanamagicsmile.com/wp-content/uploads/2025/03/care-credit.jpg 345w, https://www.santaanamagicsmile.com/wp-content/uploads/2025/03/care-credit-300x104.jpg 300w" sizes="(max-width: 345px) 100vw, 345px" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Special Offers Section -->
+            <div class="elementor-element elementor-element-ea4ca2b max-width e-flex e-con-boxed e-con e-parent" data-id="ea4ca2b" data-element_type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+                <div class="e-con-inner">
+                    <div class="elementor-element elementor-element-be7aef5 e-con-full e-flex e-con e-child" data-id="be7aef5" data-element_type="container">
+                        <div class="elementor-element elementor-element-42285f4 elementor-widget elementor-widget-heading" data-id="42285f4" data-element_type="widget" data-widget_type="heading.default">
+                            <div class="elementor-widget-container">
+                                <h2 class="elementor-heading-title elementor-size-default">Special Offers</h2>
+                            </div>
+                        </div>
+                        <div class="elementor-element elementor-element-2b35ce5 e-con-full e-grid e-con e-child" data-id="2b35ce5" data-element_type="container">
+                            <a href="https://www.santaanamagicsmile.com/contact/" style="text-decoration: none; color: inherit; display: block;">
+                                <div class="elementor-element elementor-element-1eb5245 e-con-full e-flex e-con e-child" data-id="1eb5245" data-element_type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}" style="cursor: pointer;">
+                                    <div class="elementor-element elementor-element-c0c186b elementor-widget elementor-widget-heading" data-id="c0c186b" data-element_type="widget" data-widget_type="heading.default">
+                                        <div class="elementor-widget-container">
+                                            <h3 class="elementor-heading-title elementor-size-default">Get A 10% Discount* on Select Services!</h3>
+                                        </div>
+                                    </div>
+                                    <div class="elementor-element elementor-element-e1a3db4 elementor-widget elementor-widget-text-editor" data-id="e1a3db4" data-element_type="widget" data-widget_type="text-editor.default">
+                                        <div class="elementor-widget-container">
+                                            <p>Get a 10% Discount* on the following services:<br /><strong>Dental Crowns, Dental Bridges, Dental veneers</strong></p><p>Expires: 2/28/25</p>
+                                        </div>
+                                    </div>
+                                    <div class="elementor-element elementor-element-ec7f977 elementor-widget elementor-widget-text-editor" data-id="ec7f977" data-element_type="widget" data-widget_type="text-editor.default">
+                                        <div class="elementor-widget-container">
+                                            <p>*Conditions Apply, Not Covered By Insurance.<br />Offers cannot be combined.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="https://www.santaanamagicsmile.com/contact/" style="text-decoration: none; color: inherit; display: block;">
+                                <div class="elementor-element elementor-element-0fbbdf9 e-con-full e-flex e-con e-child" data-id="0fbbdf9" data-element_type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}" style="cursor: pointer;">
+                                    <div class="elementor-element elementor-element-06f04b5 elementor-widget elementor-widget-heading" data-id="06f04b5" data-element_type="widget" data-widget_type="heading.default">
+                                        <div class="elementor-widget-container">
+                                            <h3 class="elementor-heading-title elementor-size-default">Get $50 OFF Now!</h3>
+                                        </div>
+                                    </div>
+                                    <div class="elementor-element elementor-element-919fb13 elementor-widget elementor-widget-text-editor" data-id="919fb13" data-element_type="widget" data-widget_type="text-editor.default">
+                                        <div class="elementor-widget-container">
+                                            <p>Get $50 OFF* on treatment of <strong>$200 or more</strong>.</p>
+                                        </div>
+                                    </div>
+                                    <div class="elementor-element elementor-element-65e323e elementor-widget elementor-widget-text-editor" data-id="65e323e" data-element_type="widget" data-widget_type="text-editor.default">
+                                        <div class="elementor-widget-container">
+                                            * For non-covered services for insurance patients, restrictions apply. Cannot be combined.
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="https://www.santaanamagicsmile.com/contact/" style="text-decoration: none; color: inherit; display: block;">
+                                <div class="elementor-element elementor-element-27c4244 e-con-full e-flex e-con e-child" data-id="27c4244" data-element_type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}" style="cursor: pointer;">
+                                    <div class="elementor-element elementor-element-091e829 elementor-widget elementor-widget-heading" data-id="091e829" data-element_type="widget" data-widget_type="heading.default">
+                                        <div class="elementor-widget-container">
+                                            <h3 class="elementor-heading-title elementor-size-default">$99 Dental Exam</h3>
+                                        </div>
+                                    </div>
+                                    <div class="elementor-element elementor-element-3fec4c2 elementor-widget elementor-widget-text-editor" data-id="3fec4c2" data-element_type="widget" data-widget_type="text-editor.default">
+                                        <div class="elementor-widget-container">
+                                            <p><strong>Dental exam, X-rays,</strong><br /><strong>oral cancer screening and</strong><br /><strong>regular cleaning</strong> (in absence<br />of Periodontitis)</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="elementor-element elementor-element-b47468b e-con-full e-flex e-con e-child" data-id="b47468b" data-element_type="container">
+                            <div class="elementor-element elementor-element-f713c16 hm-spl-ph elementor-widget elementor-widget-text-editor" data-id="f713c16" data-element_type="widget" data-widget_type="text-editor.default">
+                                <div class="elementor-widget-container" style="text-align: center; background-color: #fff; padding: 20px 24px 16px 24px; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); margin: 20px auto; max-width: 500px;">
+                                    <p style="margin: 8px 0 4px 0; color: #333; font-weight: 600;">Call us today</p>
+                                    <p style="margin: 0 0 8px 0;"><a href="tel:7148356677" style="color: #0097A8; font-weight: 700; font-size: 22px; text-decoration: none;">(714) 835-6677</a></p>
+                                    <p style="margin: 8px 0 4px 0; color: #333; font-weight: 600;">Llame al numero</p>
+                                    <p style="margin: 0 0 0 0;"><a href="tel:7148356677" style="color: #0097A8; font-weight: 700; font-size: 22px; text-decoration: none;">(714) 835-6677</a></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Location & Contact Section -->
+            <div data-elementor-type="wp-post" data-elementor-id="704" class="elementor elementor-704">
+                <div class="elementor-element elementor-element-3845c7f max-width e-flex e-con-boxed e-con e-parent" data-id="3845c7f" data-element_type="container">
+                    <div class="e-con-inner">
+                        <div class="elementor-element elementor-element-3be93fb e-con-full e-flex e-con e-child" data-id="3be93fb" data-element_type="container" style="display: flex; justify-content: center; align-items: center;">
+                            <div class="elementor-element elementor-element-3b3d607 elementor-widget elementor-widget-image" data-id="3b3d607" data-element_type="widget" data-widget_type="image.default">
+                                <div class="elementor-widget-container" style="text-align: center;">
+                                    <img width="400" height="499" src="https://www.santaanamagicsmile.com/wp-content/uploads/2025/03/location-map.jpg" class="attachment-full size-full wp-image-422" alt="A detailed map showing multiple locations, emphasizing the interconnectedness of various sites within a specific area." srcset="https://www.santaanamagicsmile.com/wp-content/uploads/2025/03/location-map.jpg 400w, https://www.santaanamagicsmile.com/wp-content/uploads/2025/03/location-map-240x300.jpg 240w" sizes="(max-width: 400px) 100vw, 400px" style="margin: 0 auto; display: block;" />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="elementor-element elementor-element-0698ba0 e-con-full e-flex e-con e-child" data-id="0698ba0" data-element_type="container">
+                            <div class="elementor-element elementor-element-3249841 e-con-full e-flex e-con e-child" data-id="3249841" data-element_type="container">
+                                <div class="elementor-element elementor-element-29462c3 elementor-widget elementor-widget-heading" data-id="29462c3" data-element_type="widget" data-widget_type="heading.default">
+                                    <div class="elementor-widget-container">
+                                        <h3 class="elementor-heading-title elementor-size-default">ADDRESS</h3>
+                                    </div>
+                                </div>
+                                <div class="elementor-element elementor-element-5c1ac28 e-con-full e-flex e-con e-child" data-id="5c1ac28" data-element_type="container">
+                                    <div class="elementor-element elementor-element-631f602 e-con-full e-flex e-con e-child" data-id="631f602" data-element_type="container">
+                                        <div class="elementor-element elementor-element-34d3cc1 elementor-widget elementor-widget-image" data-id="34d3cc1" data-element_type="widget" data-widget_type="image.default">
+                                            <div class="elementor-widget-container">
+                                                <img width="20" height="33" src="https://www.santaanamagicsmile.com/wp-content/uploads/2025/03/mobile.png" class="attachment-full size-full wp-image-424" alt="mobile fav" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="elementor-element elementor-element-f2f18f4 e-con-full e-flex e-con e-child" data-id="f2f18f4" data-element_type="container">
+                                        <div class="elementor-element elementor-element-df72b43 elementor-widget elementor-widget-heading" data-id="df72b43" data-element_type="widget" data-widget_type="heading.default">
+                                            <div class="elementor-widget-container">
+                                                <p class="elementor-heading-title elementor-size-default"><a href="tel:7148356677">714-835-6677</a></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="elementor-element elementor-element-17b5447 e-con-full e-flex e-con e-child" data-id="17b5447" data-element_type="container">
+                                    <div class="elementor-element elementor-element-5eb0492 e-con-full e-flex e-con e-child" data-id="5eb0492" data-element_type="container">
+                                        <div class="elementor-element elementor-element-f119e77 elementor-widget elementor-widget-image" data-id="f119e77" data-element_type="widget" data-widget_type="image.default">
+                                            <div class="elementor-widget-container">
+                                                <img width="23" height="30" src="https://www.santaanamagicsmile.com/wp-content/uploads/2025/03/location1.png" class="attachment-full size-full wp-image-425" alt="A blue location marker icon." />
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="elementor-element elementor-element-57cf3bf e-con-full e-flex e-con e-child" data-id="57cf3bf" data-element_type="container">
+                                        <div class="elementor-element elementor-element-526edbe elementor-widget elementor-widget-text-editor" data-id="526edbe" data-element_type="widget" data-widget_type="text-editor.default">
+                                            <div class="elementor-widget-container">
+                                                <p>2112 N Main St<br />Ste 100<br />Santa Ana, CA<br />92706</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="elementor-element elementor-element-cf51187 e-con-full e-flex e-con e-child" data-id="cf51187" data-element_type="container">
+                                <div class="elementor-element elementor-element-6f9e602 elementor-widget elementor-widget-heading" data-id="6f9e602" data-element_type="widget" data-widget_type="heading.default">
+                                    <div class="elementor-widget-container">
+                                        <h3 class="elementor-heading-title elementor-size-default">BUSINESS HOURS</h3>
+                                    </div>
+                                </div>
+                                <div class="elementor-element elementor-element-996803f e-con-full e-flex e-con e-child" data-id="996803f" data-element_type="container">
+                                    <table style="width: 100%; border-collapse: collapse; border: none;">
+                                        <tr>
+                                            <td style="padding: 8px 20px 8px 0; vertical-align: top; text-align: left; font-weight: 600; white-space: nowrap; border: none;">Mon</td>
+                                            <td style="padding: 8px 0; vertical-align: top; text-align: left; border: none;">9:00 am – 6:00 pm</td>
+                                        </tr>
+                                        <tr>
+                                            <td style="padding: 8px 20px 8px 0; vertical-align: top; text-align: left; font-weight: 600; white-space: nowrap; border: none;">Tue</td>
+                                            <td style="padding: 8px 0; vertical-align: top; text-align: left; border: none;">10:00 am – 7:00 pm</td>
+                                        </tr>
+                                        <tr>
+                                            <td style="padding: 8px 20px 8px 0; vertical-align: top; text-align: left; font-weight: 600; white-space: nowrap; border: none;">Wed</td>
+                                            <td style="padding: 8px 0; vertical-align: top; text-align: left; border: none;">Closed</td>
+                                        </tr>
+                                        <tr>
+                                            <td style="padding: 8px 20px 8px 0; vertical-align: top; text-align: left; font-weight: 600; white-space: nowrap; border: none;">Thu</td>
+                                            <td style="padding: 8px 0; vertical-align: top; text-align: left; border: none;">8:00 am – 5:00 pm</td>
+                                        </tr>
+                                        <tr>
+                                            <td style="padding: 8px 20px 8px 0; vertical-align: top; text-align: left; font-weight: 600; white-space: nowrap; border: none;">Fri</td>
+                                            <td style="padding: 8px 0; vertical-align: top; text-align: left; border: none;">9:00 am – 6:00 pm</td>
+                                        </tr>
+                                        <tr>
+                                            <td style="padding: 8px 20px 8px 0; vertical-align: top; text-align: left; font-weight: 600; white-space: nowrap; border: none;">Sat</td>
+                                            <td style="padding: 8px 0; vertical-align: top; text-align: left; border: none;">8:00 am – 12:00 pm</td>
+                                        </tr>
+                                        <tr>
+                                            <td style="padding: 8px 20px 8px 0; vertical-align: top; text-align: left; font-weight: 600; white-space: nowrap; border: none;">Sun</td>
+                                            <td style="padding: 8px 0; vertical-align: top; text-align: left; border: none;">Closed</td>
+                                        </tr>
+                                    </table>
+                                </div>
+                            </div>
+                            <div class="elementor-element elementor-element-df39f9c e-con-full e-flex e-con e-child" data-id="df39f9c" data-element_type="container">
+                                <div class="elementor-element elementor-element-aebd684 e-con-full e-flex e-con e-child" data-id="aebd684" data-element_type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+                                    <div class="elementor-element elementor-element-fdc1ced footer-form elementor-widget elementor-widget-button" data-id="fdc1ced" data-element_type="widget" data-widget_type="button.default">
+                                        <div class="elementor-widget-container">
+                                            <div class="elementor-button-wrapper">
+                                                <a class="elementor-button elementor-button-link elementor-size-lg" href="https://www.santaanamagicsmile.com/contact/" style="width: 100%; text-align: center; padding: 20px; font-size: 18px; font-weight: 600; background-color: #0097A8; color: white; border-radius: 5px; text-decoration: none; display: block;">
+                                                    <span class="elementor-button-content-wrapper">
+                                                        <span class="elementor-button-text">Contact Us</span>
+                                                    </span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<script src="https://www.santaanamagicsmile.com/wp-includes/js/jquery/jquery.min.js?ver=3.7.1"></script>
+<script src="https://www.santaanamagicsmile.com/wp-content/plugins/elementor/assets/js/frontend.min.js?ver=3.33.0"></script>
+
+</body>
+</html>
